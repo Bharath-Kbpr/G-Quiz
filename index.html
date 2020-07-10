@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<link rel="stylesheet" href="./css/index.css">
+<body>
+    <section>
+        <div class="yellow">
+            <div class="blue">
+        
+  <div class="login-page">
+      <div class="form">
+          
+          <form class="register-form">
+              <input type="text" placeholder="Username">
+              <input type="password" placeholder="Password">
+              <input type="email" placeholder="User email">
+              <button type="button">Register</button>
+              <p class="mssge">Already Registered ?<a href="#">Login</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="button">Login</button>
+            <p class="mssge">Not  Registered ?<a href="#">Register</a></p>
+        </form>
+      </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+      $('.mssge a').click(function()
+      {
+          $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+      })
+  </script>
+</body>
+</html>

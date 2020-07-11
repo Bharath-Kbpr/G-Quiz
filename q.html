@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/q.css">
+</head>
+<body>
+    <section>
+        <div class="content">
+            <span>Campus News |</span>
+            <marquee direction="left">GIT Fee notice for the academic tear 2018-2019 |Dear student,please note your official gitam student Email-id is:121710307003,please change your password after immediately afetr login at mail.gitam.in</marquee>
+        </div>
+    </section>
+    <section>
+        <img src="./img/g.png" class="gitam">
+        <img src="./img/g1.PNG" class="cats">
+    </section>
+    <nav>
+        <h1>G-QUIZ</h1>
+    </nav>
+
+   
+ <section>
+    <p id="countdown" style="background-color:  #990000;color: #fff;border-radius: 6px;text-align: center;font-size: 50px; height: 70px;width: 200px; float: right;"></p>
+    
+ </section>
+    <form name="myform">
+       <p> Q1.what is the capital of india?</p>
+        <input type="radio" name="q1" value="a">delhi<br>
+        <input type="radio" name="q1" value="b">guntur<br>
+        <input type="radio" name="q1" value="c">hyderbad<br>
+        <input type="radio" name="q1" value="d">ongole<br><br>
+
+        <p> Q2.who is the cm of AP?</p>
+        <input type="radio" name="q2" value="a">chandra babu<br>
+        <input type="radio" name="q2" value="b">YSR<br>
+        <input type="radio" name="q2" value="c">YS.jagan<br>
+        <input type="radio" name="q2" value="d">papu<br><br>
+        <p> Q3.which country has more population?</p>
+        <input type="radio" name="q3" value="a">INDIA<br>
+        <input type="radio" name="q3" value="b">US<br>
+        <input type="radio" name="q3" value="c">AFRICA<br>
+        <input type="radio" name="q3" value="d">CHINA<br><br>
+        <p> Q4.light speed?</p>
+        <input type="radio" name="q4" value="a">3 x 10**8<br>
+        <input type="radio" name="q4" value="b">9000<br>
+        <input type="radio" name="q4" value="c">30 x 56<br>
+        <input type="radio" name="q4" value="d">18000ms-1<br><br>
+        <p> Q5.when did we get the independence?</p>
+        <input type="radio" name="q5" value="a">1947<br>
+        <input type="radio" name="q5" value="b">1948<br>
+        <input type="radio" name="q5" value="c">1946<br>
+        <input type="radio" name="q5" value="d">1949<br><br>
+        <p> Q6.who is the 87th richest man in world not in India?</p>
+        <input type="radio" name="q6" value="a">baba azar<br>
+        <input type="radio" name="q6" value="b">stephen<br>
+        <input type="radio" name="q6" value="c">abhi<br>
+        <input type="radio" name="q6" value="d">shareef<br><br>
+        <p> Q7.which month is rainy mostly?</p>
+        <input type="radio" name="q7" value="a">feb<br>
+        <input type="radio" name="q7" value="b">oct<br>
+        <input type="radio" name="q7" value="c">sep<br>
+        <input type="radio" name="q7" value="d">Aug<br><br>
+        <p> Q8.who steped 1st on the moon?</p>
+        <input type="radio" name="q8" value="a">willam<br>
+        <input type="radio" name="q8" value="b">armstrong<br>
+        <input type="radio" name="q8" value="c">stephen<br>
+        <input type="radio" name="q8" value="d">cornel<br><br>
+        <p> Q9.what is the bussiness capital of india?</p>
+        <input type="radio" name="q9" value="a">mumbai<br>
+        <input type="radio" name="q9" value="b">bangalore<br>
+        <input type="radio" name="q9" value="c">maharastra<br>
+        <input type="radio" name="q9" value="d">chennai<br><br>
+        <p> Q10.Bhaiya enthaki ah giri koja estada bharath ki money?</p>
+        <input type="radio" name="q10" value="a">keep faith<br>
+        <input type="radio" name="q10" value="b">hope so<br>
+        <input type="radio" name="q10" value="c">no no no<br>
+        <input type="radio" name="q10" value="d">yes,100 cores turn over bhaya<br><br>
+<input type="button" value="submit" onclick="check()">
+    </form>
+    <script src="./js/script.js"></script>
+    <script>
+        function check(){
+            var q1=document.myform.q1.value;
+            var q2=document.myform.q2.value;
+            var q3=document.myform.q3.value;
+            var q4=document.myform.q4.value;
+            var q5=document.myform.q5.value;
+            var q6=document.myform.q6.value;
+            var q7=document.myform.q7.value;
+            var q8=document.myform.q8.value;
+            var q9=document.myform.q9.value;
+            var q10=document.myform.q10.value;
+             var count=0;
+
+             if(q1=="a"){
+                 count++
+             }
+             if(q2=="c"){
+                 count++
+             }
+             if(q3=="d"){
+                 count++
+             }
+             if(q4=="a"){
+                 count++
+             }
+             if(q5=="a"){
+                 count++
+             }
+             if(q6=="a"){
+                 count++
+             }
+             if(q7=="d"){
+                 count++
+             }
+             if(q8=="b"){
+                 count++
+             }
+             if(q9=="a"){
+                 count++
+             }
+             if(q10=="d"){
+                 count++
+             }
+             alert("you got"+count+"marks");
+        }
+
+    </script>
+</body>
+</html>
